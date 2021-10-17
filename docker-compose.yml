@@ -2,14 +2,7 @@ version: "3"
 services:
   fichas:
     build: .
-    container_name: "fichas-electronicas"
+    container_name: "yofio_intermedio"
     env_file: .env
     ports:
       - "8090:8090"
-    networks:
-      - default
-
-networks:
-  default:
-    external:
-      name: sqlserver
